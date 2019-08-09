@@ -42,7 +42,7 @@ server.delete('/:id/chores/:choreId', (req,res)=>{
   if(selectedId){
     selectedId.chores = [...newChores]
     res.status(200).json(selectedId.chores)
-  } else {res.status(400).json({message: "Oh no! Couldn't find that user!"})}
+  } else {res.status(400).json({message: "Person could not be located."})}
 })
 // ------------------------------------------------------------------------------------------
 
